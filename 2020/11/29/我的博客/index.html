@@ -163,6 +163,15 @@
         </span>
 
         
+        <span class="category">
+            <a href="/categories/我的文档">
+                <span class="icon">
+                    <a-icon type="book" theme="filled" />
+                </span>
+                我的文档
+            </a>
+        </span>
+        
 
         
 
@@ -173,8 +182,15 @@
             
             <span class="tag">
                 
-                <a href="/tags/杂项" style=color:#ffa2c4>
+                <a href="/tags/杂项" style=color:#00bcd4>
                     杂项
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/js" style=color:#00a596>
+                    js
                 </a>
             </span>
             
@@ -186,8 +202,37 @@
         <p>之前一直有做个博客的想法，但是因为种种原因(主要是懒)，一直没有弄，今天趁周末没事情做，搭个博客记录一写工作中遇到的问题，和一些知识点，最主要的是督促自己进步，以后尽量一周一更，先立个flag。</p>
 <h2 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h2><p>创建博客的方法有两种，这边就不一一赘述了，我是用的git + hexo创建的，当时也是翻阅了很多文档资料，附上传送门:<br><a target="_blank" rel="noopener" href="https://hexo.io/themes">Hexo</a><br><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904185838698509">如何快速搭建好看的个人博客</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/60578464">使用 Hexo+GitHub 搭建个人免费博客教程</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/thanksblog/p/12900165.html">hexo+github搭建个人博客</a></p>
 <h2 id="创建时遇到的问题"><a href="#创建时遇到的问题" class="headerlink" title="创建时遇到的问题"></a>创建时遇到的问题</h2><p>探索未知的事物总不是一帆风顺的，我也一样，当时创建时也遇到很多稀奇古怪的问题，好在最后都解决了，如果你跟我一样也遇到这样的问题，希望能帮助到你</p>
-<h3 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h3><p>创建好博客之后，修改主题的时候老是不生效，一直都是默认主题，如果你也想修改一款<a target="_blank" rel="noopener" href="https://hexo.io/themes">Hexo</a>上好看的主题的话，教程如下：<br>    - 首先在<a target="_blank" rel="noopener" href="https://hexo.io/themes">Hexo</a>上选择一个你想要的主题<br>    - 拿我这个主题hexo-theme-particle举例</p>
-
+<h3 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h3><p>创建好博客之后，修改主题的时候老是不生效，一直都是默认主题，如果你也想修改一款<a target="_blank" rel="noopener" href="https://hexo.io/themes">Hexo</a>上好看的主题的话，教程如下：</p>
+<ul>
+<li>首先在<a target="_blank" rel="noopener" href="https://hexo.io/themes">Hexo</a>上选择一个你想要的主题</li>
+<li>拿我这个主题hexo-theme-particle举例<pre><code class="git">// 先把选好的主题clone到你的博客source文件夹下,默认主题可以不要
+$ git clone https://github.com/korilin/hexo-theme-particle.git particle</code></pre>
+</li>
+<li>修改显示主题<br>在项目目录下查找 _config.yml 找到theme，修改如下：(theme:主题名字)<pre><code class="_config.yml"># Extensions
+$ Plugins: https://hexo.io/plugins/
+$ Themes: https://hexo.io/themes/
+$ theme: hexo-theme-particle</code></pre>
+</li>
+<li>然后重启项目<pre><code class="hexo"># 清除缓存文件
+$ hexo cl
+# 生成静态文件
+$ hexo g
+# 启动服务
+$ hexo s</code></pre>
+</li>
+</ul>
+<p>详细内容请参考<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo文档</a></p>
+<h3 id="修改主题内容"><a href="#修改主题内容" class="headerlink" title="修改主题内容"></a>修改主题内容</h3><p>现在你的主题应该可以使用了，但是还有很多细节需要设置，比如网站名称，标题、副标题，这个要怎么设置呢？<br>你可以在项目目录下的 _config.yml 中修改大部分的配置。</p>
+<pre><code class="Site"># Site
+title: 网站标题
+subtitle: 网站副标题
+description: 网站描述
+keywords: 网站的关键词。可以多个关键词。
+author: 您的名字
+language: 网站使用的语言。常见的有 zh-Hans和 zh-CN。
+timezone: 网站时区。Hexo 默认使用您电脑的时区。</code></pre>
+<p>其他的不常用就不一一列举了，详细内容请参考<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo文档</a></p>
+<h3 id="重启项目，大功告成"><a href="#重启项目，大功告成" class="headerlink" title="重启项目，大功告成"></a>重启项目，大功告成</h3>
     </div>
 
     
